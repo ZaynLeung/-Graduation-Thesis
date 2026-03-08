@@ -1,0 +1,62 @@
+%%
+% 摘要信息
+% 摘要内容应概括地反映出本论文的主要内容，主要说明本论文的研究目的、内容、方法、成果和结论。要突出本论文的创造性成果或新见解，不要与引言相 混淆。语言力求精练、准确，以 300—500 字为宜。
+% 关键词是供检索用的主题词条，应采用能覆盖论文主要内容的通用技术词条(参照相应的技术术语 标准)。按词条的外延层次排列（外延大的排在前面）。。
+
+
+\cabstract{
+	% 摘要内容应概括地反映出本论文的主要内容，主要说明本论文的研究目的、内容、方法、成果和结论。要突出本论文的创造性成果或新见解，不要与引言相混淆。语言力求精练、准确，以300—500字为宜。
+	人机运动重定向作为连接人类运动空间与机器人操作空间的桥梁，已成为具身智能领域实现高灵巧数据生成生产的核心关键技术。
+	特别是在涉及复杂物体交互与精密抓取的场景中，如灵巧机械手的远程遥操作，在这方面重定向技术的精度与实时性直接决定了系统的工作效率。
+	为了提高重定向结果的精度和平滑性，我们认为可以引入时间信息作为重定向算法输入之一。
+	现有主流研究多侧重于单帧映射模型，这类方法由于缺乏对运动连续性的考虑，往往忽略了关键的帧间时序依赖关系，
+	导致生成的机器人动作在执行过程中出现明显的轨迹抖动与不连贯现象，严重影响了重定向结果的平滑性与物理可行性。
+	
+	针对上述挑战，本文提出了 TransRetarget：一种基于时空Transformer架构的新型多帧人手到机械手运动重定向算法。
+	该方法充分利用Transformer架构在长序列建模与全局特征提取方面的卓越能力，构建了一个能够深度融合空间结构与时间维度的特征提取网络。
+	通过该架构，模型不仅能够精准建模单帧内各手指关节间的复杂解剖学相关性，更能够捕捉连续多帧数据中的动态时间演变规律。这种对时空特征的联合建模，
+	确保了从人类手部姿势到机械手动作映射的高保真度，从而生成既符合人类运动意图又具备物理平滑性的高质量机械手运动轨迹。
+	为进一步确保人类手部姿势与异构机械手动作之间的一致性，本文针对性地设计了一套严谨的几何约束与运动学辅助损失函数机制。
+	我们将手指侧向移动、手指弯曲度以及核心指尖间距等关键解剖特征进行参数化建模，并将其整合为一个多目标的复合损失函数。
+	该损失函数旨在对多个方面进行损失计算，使得网络得以进行自监督，鼓励模型在训练过程中学习到跨空间的语义对齐特征，
+	有效解决了人机手部异构性带来的映射问题。
+	% 在本文中，我们提出了TransRetarget，这是一种基于时空 Transformer 架构的新型多帧人手到机械手运动重定向方法。
+	% 通过利用 Transformer 强大的建模能力，我们的方法能够有效地捕捉人类手部姿势和机械手动作之间的复杂关系。
+	% 它不仅能全面建模帧内关节相关性，还能捕捉帧间的时间依赖性，从而生成高质量的机械手运动数据。
+	% 此外，为了确保人类手部姿势和机械手动作之间的一致性，
+	% 我们设计了一套损失函数，包括手指侧向移动，手指弯曲度和指尖间距被整合进一个复合损失函数中用于训练。
+	
+	本工作在多个大规模人手运动数据集及使用多种主流灵巧机械手在虚拟平台上进行了详尽的对比实验。
+	实验结果一致表明，TransRetarget在重定向精度、运动轨迹平滑度以及跨平台泛化性等核心指标上均显著优于现有的基准模型。
+	实验证明，本文提出的时空建模方案与复合损失机制能够有效支撑复杂的具身智能交互任务，为高精度灵巧遥操作提供了可靠的技术方案。
+	另外本工作还通过丰富的实验结果表明，我们的方法在多个数据集和各种灵巧机械手平台上均取得了卓越的性能。
+}
+% 中文关键词(每个关键词之间用“;”分开,最后一个关键词不打标点符号。)
+\ckeywords{Transformer，动作重定向，时空域特征，灵巧手 }
+
+\eabstract{
+	Human-robot motion retargeting, as a bridge connecting the human motion space with the robot operation space, 
+	has become a core and key technology for achieving high-fidelity data generation and production in the field of embodied intelligence. 
+	Especially in scenarios involving complex object interaction and precise grasping, such as the remote teleoperation of dexterous manipulators, 
+	the accuracy and real-time performance of retargeting technology directly determine the system's operational efficiency. 
+	To enhance the accuracy and smoothness of the retargeting results, we propose incorporating temporal information as one of the inputs to the retargeting method. 
+	Current mainstream research mostly focuses on single-frame mapping models. These methods, due to the lack of consideration for motion continuity, 
+	often overlook the crucial inter-frame temporal dependencies, resulting in obvious trajectory jitter and discontinuity in the generated robot motions during execution, 
+	which significantly affects the smoothness and physical feasibility of the retargeting results.
+
+	In response to the aforementioned challenges, this paper proposes TransRetarget: a novel multi-frame human-robot hand motion retargeting method based on the spatial-temporal Transformer architecture.
+This method fully utilizes the outstanding capabilities of the Transformer architecture in long sequence modeling and global feature extraction, constructing a feature extraction network that can deeply integrate spatial structure and time dimensions.
+Through this architecture, the model not only can accurately model the complex anatomical correlations among each finger joint in a single frame, but also can capture the dynamic time evolution patterns in consecutive multiple frames of data. This joint modeling of spatiotemporal features
+ensures high fidelity in mapping from human hand postures to mechanical hand actions, thereby generating high-quality mechanical hand motion trajectories that both conform to human movement intentions and possess physical smoothness.
+To further ensure the consistency between human hand postures and heterogeneous mechanical hand actions, this paper specifically designs a rigorous geometric constraint and kinematics auxiliary loss function mechanism.
+We parameterize and model key anatomical features such as finger lateral movement, finger curvature, and core fingertip spacing, and integrate them into a multi-objective composite loss function.
+This loss function aims to calculate losses in multiple aspects, enabling the network to perform self-supervision and encouraging the model to learn cross-space semantic alignment features during training,
+effectively solving the mapping problem caused by the heterogeneity of human and mechanical hands.
+
+	In this work, extensive comparative experiments were conducted across multiple large-scale human hand motion datasets and various mainstream dexterous robotic hands on virtual platforms.
+Experimental results consistently demonstrate that TransRetarget significantly outperforms existing baseline models in core metrics such as retargeting accuracy, motion trajectory smoothness, and cross-platform generalization.
+Experiments prove that the proposed spatiotemporal modeling scheme and composite loss mechanism can effectively support complex embodied intelligence interaction tasks, providing a reliable technical solution for high-precision dexterous teleoperation.
+Furthermore, this work demonstrates through rich experimental results that our method achieves superior performance across multiple datasets and various dexterous robotic hand platforms.
+	}
+% 英文文关键词（关键词之间用逗号隔开，最后一个关键词不打标点符号。）
+\ekeywords{Transformer, Motion Retargeting, Spatio-Temporal Features, Dextrous Hands}

@@ -2,12 +2,17 @@
 本章将详细介绍本文提出的基于时空 Transformer 架构的人机运动重定向算法——TransRetarget。
 该算法旨在解决现有重定向方法中存在的帧间动作不连贯、对输入噪声敏感以及跨平台适配困难等核心问题。
 \section{PoseformerV1}
+作为本论文算法的参考算法，本文将首先介绍 PoseFormerV1 的原理。其主要完成的任务是解析输入的二维关键点序列，并生成相应的三维姿态表示。
 PoseFormerV1 的整体架构主要由空间 Transformer 编码器和时间 Transformer 编码器级联而成
 \cite{zheng3dHumanPose2021}\cite{zhaoPoseformerv2ExploringFrequency2023}，如图\ref{fig:poseV1network} 所示。
-\begin{figure*}
+
+\begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{figure/poseV1network.png}
-\end{figure*}
+    \caption{PoseFormerV1 的网络架构示意图。}
+    \label{fig:poseV1network}
+\end{figure}
+
 \subsection{空间 Transformer 编码器}
 输入：每一帧内所有人体关节的坐标 。
 处理机制：首先将每个关节坐标线性投影为高维向量，并加入可学习的空间位置嵌入以保留关节类别信息 。作用：利用自注意力机制在单帧内捕捉不同关节之间的空间拓扑依赖关系 。
@@ -18,12 +23,28 @@ PoseFormerV1 的整体架构主要由空间 Transformer 编码器和时间 Trans
 作用：学习动作在长距离时间序列中的演变规律和动态特征 。
 
 \subsection{回归头}
-通过简单的 1D 卷积聚合时间信息，并利用线性投影层最终输出中心帧的 3D 姿态表示 。
+通过回归头聚合时间信息，并利用线性投影层最终输出中心帧的 3D 姿态表示 。
 
 \subsection{主要优势}
-打破卷积局限：相比传统的 CNN 方法，PoseFormerV1 能够更好地建模人体关节间的长距离依赖和复杂的时间动态规律 。性能卓越：在 Human3.6M 等权威数据集上取得了领先的预测精度，证明了 Transformer 处理骨骼点序列的有效性 。
+打破卷积局限：相比传统的 CNN 方法，
+PoseFormerV1 能够更好地建模人体关节间的长距离依赖和复杂的时间动态规律。
+其在 Human3.6M 等权威数据集上取得了领先的预测精度，证明了 Transformer 处理骨骼点序列的有效性 。
 \subsection{局限性}
-尽管 PoseFormerV1 表现优异，但在实际应用中仍面临挑战：计算开销巨大：由于自注意力机制的计算量随序列长度成平方级增长，处理长序列（如 81 帧以上）时对硬件资源要求极高 。
+尽管 PoseFormerV1 表现优异，但在实际应用中仍面临挑战。
+其计算开销巨大：由于自注意力机制的计算量随序列长度成平方级增长，
+处理长序列（如 81 帧以上）时对硬件资源要求极高 。
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=0.95\textwidth]{figure/nextwork_framework.jpg}
+  \captionsetup{font=footnotesize}
+  \caption{ Temporal-Spatial Transformer structure. 
+  The input is a sequence of 3D human hand poses, which are first processed through a spatial transformer to extract inter-joint features, 
+  and then fed into a temporal transformer to capture the temporal dynamics across frames. Finally, the output is regressed into robotic joint angles.
+  (a) Temporal-Spatial Transformer module; (b) Spatial Transformer module; (c) Transformer encoder.
+  }
+  \label{fig:network_framework}
+\end{figure*}
 \section{空间编码器}
 \label{sec1}
 在本文提出的 TransRetarget 框架中，空间编码器承担着解析单帧手部姿态内部拓扑结构的任务。与原始 PoseFormerV1 处理 2D 像素坐标不同，

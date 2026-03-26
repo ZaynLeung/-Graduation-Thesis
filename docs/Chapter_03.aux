@@ -15,34 +15,40 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {3-1}{\ignorespaces PoseFormerV1 的网络架构示意图。}}{16}{figure.caption.5}\protected@file@percent }
 \newlabel{fig:poseV1network}{{3-1}{16}{PoseFormerV1 的网络架构示意图。}{figure.caption.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.5}局限性}{16}{subsection.3.1.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}空间编码器}{16}{section.3.2}\protected@file@percent }
-\newlabel{sec1}{{3.2}{16}{空间编码器}{section.3.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}特征线性投影}{16}{subsection.3.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}空间位置嵌入}{17}{subsection.3.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}空间多头自注意力机制}{17}{subsection.3.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}时间编码器}{17}{section.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}时间位置嵌入}{17}{subsection.3.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}时间多头自注意力机制}{17}{subsection.3.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}时空特征深度耦合}{18}{subsection.3.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}回归头}{18}{section.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}特征聚合与降维}{18}{subsection.3.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}关节角度向量映射}{18}{subsection.3.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}物理范围限制与激活设计}{19}{subsection.3.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}对后续运动学模块的支持}{19}{subsection.3.4.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}运动学模块}{19}{section.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}机器人描述文件解析}{19}{subsection.3.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}前向运动学计算}{19}{subsection.3.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}实际位置导出与物理校验}{20}{subsection.3.5.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.4}跨平台适配的灵活性}{20}{subsection.3.5.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.6}损失函数设计}{20}{section.3.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.1}手指摆动损失}{20}{subsection.3.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.2}手指指尖位置损失}{21}{subsection.3.6.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.3}手指指尖距离损失}{21}{subsection.3.6.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.4}碰撞损失}{21}{subsection.3.6.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.5}复合损失函数汇总}{21}{subsection.3.6.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.7}本章小结}{22}{section.3.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3-2}{\ignorespaces Overview of TransRetarget framework. The model input is the position of human joints. During the training stage, after the angles are output, they will be converted into the position of the robotic hand through the forward kinematics module, and then enter the loss function to guide the optimization of network parameters, while the data flows along the blue arrows and the brown arrows. In the inference process, the angles are directly used to drive the robotic hand, while the data flows along the blue arrows. }}{17}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:model_framework}{{3-2}{17}{Overview of TransRetarget framework. The model input is the position of human joints. During the training stage, after the angles are output, they will be converted into the position of the robotic hand through the forward kinematics module, and then enter the loss function to guide the optimization of network parameters, while the data flows along the blue arrows and the brown arrows. In the inference process, the angles are directly used to drive the robotic hand, while the data flows along the blue arrows}{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}TransRetarget方法总览}{17}{section.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}人手坐标系统一}{17}{section.3.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3-3}{\ignorespaces  Temporal-Spatial Transformer structure. The input is a sequence of 3D human hand poses, which are first processed through a spatial transformer to extract inter-joint features, and then fed into a temporal transformer to capture the temporal dynamics across frames. Finally, the output is regressed into robotic joint angles. (a) Temporal-Spatial Transformer module; (b) Spatial Transformer module; (c) Transformer encoder. }}{18}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:network_framework}{{3-3}{18}{Temporal-Spatial Transformer structure. The input is a sequence of 3D human hand poses, which are first processed through a spatial transformer to extract inter-joint features, and then fed into a temporal transformer to capture the temporal dynamics across frames. Finally, the output is regressed into robotic joint angles. (a) Temporal-Spatial Transformer module; (b) Spatial Transformer module; (c) Transformer encoder}{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}空间编码器}{18}{section.3.4}\protected@file@percent }
+\newlabel{sec1}{{3.4}{18}{空间编码器}{section.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}特征线性投影}{18}{subsection.3.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}空间位置嵌入}{18}{subsection.3.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}空间多头自注意力机制}{19}{subsection.3.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}时间编码器}{19}{section.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}时间位置嵌入}{19}{subsection.3.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}时间多头自注意力机制}{19}{subsection.3.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}时空特征深度耦合}{19}{subsection.3.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}回归头}{20}{section.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.1}特征聚合与降维}{20}{subsection.3.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.2}关节角度向量映射}{20}{subsection.3.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.3}物理范围限制与激活设计}{20}{subsection.3.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.4}对后续运动学模块的支持}{21}{subsection.3.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.7}运动学模块}{21}{section.3.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.1}机器人描述文件解析}{21}{subsection.3.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.2}前向运动学计算}{21}{subsection.3.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.3}实际位置导出与物理校验}{22}{subsection.3.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.4}跨平台适配的灵活性}{22}{subsection.3.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.8}损失函数设计}{22}{section.3.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.8.1}手指摆动损失}{22}{subsection.3.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.8.2}手指指尖位置损失}{22}{subsection.3.8.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.8.3}手指指尖距离损失}{23}{subsection.3.8.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.8.4}碰撞损失}{23}{subsection.3.8.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.8.5}复合损失函数汇总}{23}{subsection.3.8.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.9}本章小结}{23}{section.3.9}\protected@file@percent }
 \@setckpt{docs/Chapter_03}{
-\setcounter{page}{23}
+\setcounter{page}{24}
 \setcounter{equation}{5}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
@@ -52,12 +58,12 @@
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
 \setcounter{chapter}{3}
-\setcounter{section}{7}
+\setcounter{section}{9}
 \setcounter{subsection}{0}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{1}
+\setcounter{figure}{3}
 \setcounter{table}{0}
 \setcounter{caption@flags}{2}
 \setcounter{continuedfloat}{0}
@@ -88,7 +94,7 @@
 \setcounter{Item}{0}
 \setcounter{Hfootnote}{0}
 \setcounter{Hy@AnnotLevel}{0}
-\setcounter{bookmark@seq@number}{22}
+\setcounter{bookmark@seq@number}{24}
 \setcounter{BackrefHyperFootnoteCounter}{0}
 \setcounter{lstlisting}{0}
 }

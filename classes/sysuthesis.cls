@@ -53,6 +53,20 @@
 \RequirePackage{datetime}
 \RequirePackage{nth}
 
+% 引入宏包
+% \usepackage{times}
+% \usepackage{caption} 
+% \usepackage{booktabs}
+% \usepackage{graphicx}  % 添加这一行来支持图片插入
+% \usepackage{subfigure}
+% \usepackage{subfig}
+% \usepackage{amssymb}
+% \usepackage{amsmath} % assumes amsmath package installed
+% \usepackage{multirow}  % 添加这一行
+% \usepackage{cite} % 添加这一行来支持引用格式
+% \usepackage{placeins}  % 在导言区添加
+% \usepackage{tabularx}
+% \usepackage{array} % 必须在导言区引用
 % 引入调整段落整体宽度的宏包
 \RequirePackage{changepage}
 \usepackage{xeCJK}

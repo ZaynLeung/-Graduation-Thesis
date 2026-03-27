@@ -22,52 +22,50 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Database file #1: Bibliography/Reference.bib
-Warning--I didn't find a database entry for "hengFramebyframeMotionRetargeting2024"
-Warning--I didn't find a database entry for ""
 Warning--Require address: oneillOpenXembodimentRobotic2024
 Warning--Require address: figueraRedefiningDataPairing2024
 Warning--Require address: ICRA2026LYC
 Warning--Require address: dingBunnyvisionproRealtimeBimanual2025
 Warning--Require address: imambiPyTorch2021
-You've used 19 entries,
+You've used 26 entries,
             3107 wiz_defined-function locations,
-            836 strings with 11521 characters,
-and the built_in function-call counts, 37643 in all, are:
-= -- 4197
-> -- 73
-< -- 165
-+ -- 3333
-- -- 252
-* -- 939
-:= -- 4220
+            874 strings with 13728 characters,
+and the built_in function-call counts, 52678 in all, are:
+= -- 5906
+> -- 101
+< -- 228
++ -- 4728
+- -- 351
+* -- 1282
+:= -- 5943
 add.period$ -- 0
-call.type$ -- 19
-change.case$ -- 108
+call.type$ -- 26
+change.case$ -- 150
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 5368
-empty$ -- 1447
-format.name$ -- 216
-if$ -- 10121
+cite$ -- 31
+duplicate$ -- 7515
+empty$ -- 1982
+format.name$ -- 300
+if$ -- 14187
 int.to.chr$ -- 0
-int.to.str$ -- 19
+int.to.str$ -- 26
 missing$ -- 0
-newline$ -- 84
-num.names$ -- 19
-pop$ -- 497
+newline$ -- 105
+num.names$ -- 26
+pop$ -- 694
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 328
+skip$ -- 449
 stack$ -- 0
-substring$ -- 4558
-swap$ -- 881
+substring$ -- 6390
+swap$ -- 1202
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 5
-while$ -- 475
-width$ -- 21
-write$ -- 273
-(There were 7 warnings)
+while$ -- 663
+width$ -- 28
+write$ -- 359
+(There were 5 warnings)

@@ -57,14 +57,11 @@
 \contentsline {subsection}{\numberline {3.5.3}时空特征深度耦合}{21}{subsection.3.5.3}%
 \contentsline {section}{\numberline {3.6}回归头}{22}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}特征聚合与降维}{22}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}关节角度向量映射}{22}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}物理范围限制与激活设计}{22}{subsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.6.4}对后续运动学模块的支持}{22}{subsection.3.6.4}%
+\contentsline {subsection}{\numberline {3.6.2}物理范围限制与激活设计}{22}{subsection.3.6.2}%
 \contentsline {section}{\numberline {3.7}运动学模块}{23}{section.3.7}%
 \contentsline {subsection}{\numberline {3.7.1}机器人描述文件解析}{23}{subsection.3.7.1}%
 \contentsline {subsection}{\numberline {3.7.2}前向运动学计算}{23}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}实际位置导出与物理校验}{23}{subsection.3.7.3}%
-\contentsline {subsection}{\numberline {3.7.4}跨平台适配的灵活性}{24}{subsection.3.7.4}%
+\contentsline {subsection}{\numberline {3.7.3}跨平台适配的灵活性}{24}{subsection.3.7.3}%
 \contentsline {section}{\numberline {3.8}损失函数设计}{24}{section.3.8}%
 \contentsline {subsection}{\numberline {3.8.1}手指摆动损失}{24}{subsection.3.8.1}%
 \contentsline {subsection}{\numberline {3.8.2}手指指尖位置损失}{24}{subsection.3.8.2}%
@@ -84,34 +81,34 @@
 \contentsline {section}{\numberline {4.2}不同方法的对比实验}{28}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}NLO}{28}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}VMR}{28}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}结果展示}{29}{subsection.4.2.3}%
 \contentsline {section}{\numberline {4.3}消融实验}{29}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}实验设置}{29}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}结果展示}{29}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}结果分析}{29}{subsection.4.3.3}%
 \contentsline {section}{\numberline {4.4}Transformer结构作用可视化}{30}{section.4.4}%
-\contentsline {section}{\numberline {4.5}多平台实验}{30}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Linker 灵巧手平台实验}{30}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Shadow 灵巧手平台实验}{30}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Inspire 灵巧手平台实验}{32}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}多平台实验结果}{32}{subsection.4.5.4}%
-\contentsline {subsection}{\numberline {4.5.5}多平台实验结论}{32}{subsection.4.5.5}%
-\contentsline {section}{\numberline {4.6}单机现实世界测试}{32}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}实验环境构建}{33}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}实验对象与任务设计}{33}{subsection.4.6.2}%
-\contentsline {subsection}{\numberline {4.6.3}实验结果}{34}{subsection.4.6.3}%
-\contentsline {subsection}{\numberline {4.6.4}实验结果分析}{34}{subsection.4.6.4}%
-\contentsline {subsection}{\numberline {4.6.5}实验小结}{34}{subsection.4.6.5}%
-\contentsline {section}{\numberline {4.7}本章小结}{34}{section.4.7}%
-\contentsline {chapter}{\numberline {第5章\hspace {.3em}}重定向后的交互强化}{36}{chapter.5}%
-\contentsline {section}{\numberline {5.1}直接使用重定向结果的缺陷}{36}{section.5.1}%
-\contentsline {section}{\numberline {5.2}基于VLM的目标抓取力预测}{37}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}VLM简述}{37}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}大模型结合的目标抓取力预测}{37}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}基于力矩反馈的强化学习}{38}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}强化学习简述}{38}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}力矩反馈的自适应关节角度调整}{38}{subsection.5.3.2}%
-\contentsline {chapter}{\numberline {第6章\hspace {.3em}}总结与展望}{39}{chapter.6}%
-\contentsline {section}{\numberline {6.1}工作总结}{39}{section.6.1}%
-\contentsline {section}{\numberline {6.2}研究展望}{39}{section.6.2}%
-\contentsline {chapter}{参考文献}{41}{chapter*.19}%
-\contentsline {chapter}{致谢}{44}{chapter*.20}%
+\contentsline {section}{\numberline {4.5}多平台实验}{31}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}pybullet仿真平台}{31}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Linker 灵巧手平台实验}{33}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Shadow 灵巧手平台实验}{33}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Inspire 灵巧手平台实验}{33}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.5.5}多平台实验结果}{33}{subsection.4.5.5}%
+\contentsline {section}{\numberline {4.6}单机现实世界测试}{34}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}实验环境构建}{34}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}实验对象与任务设计}{34}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}实验结果}{35}{subsection.4.6.3}%
+\contentsline {subsection}{\numberline {4.6.4}实验结果分析}{35}{subsection.4.6.4}%
+\contentsline {subsection}{\numberline {4.6.5}实验小结}{36}{subsection.4.6.5}%
+\contentsline {section}{\numberline {4.7}本章小结}{36}{section.4.7}%
+\contentsline {chapter}{\numberline {第5章\hspace {.3em}}重定向后的交互强化}{37}{chapter.5}%
+\contentsline {section}{\numberline {5.1}直接使用重定向结果的缺陷}{37}{section.5.1}%
+\contentsline {section}{\numberline {5.2}基于VLM的目标抓取力预测}{38}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}VLM简述}{38}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}大模型结合的目标抓取力预测}{38}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}基于力矩反馈的强化学习}{39}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}强化学习简述}{39}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}力矩反馈的自适应关节角度调整}{39}{subsection.5.3.2}%
+\contentsline {chapter}{\numberline {第6章\hspace {.3em}}总结与展望}{40}{chapter.6}%
+\contentsline {section}{\numberline {6.1}工作总结}{40}{section.6.1}%
+\contentsline {section}{\numberline {6.2}研究展望}{40}{section.6.2}%
+\contentsline {chapter}{参考文献}{42}{chapter*.22}%
+\contentsline {chapter}{致谢}{45}{chapter*.23}%

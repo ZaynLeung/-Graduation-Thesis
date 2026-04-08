@@ -52,7 +52,10 @@
 \RequirePackage{setspace}
 \RequirePackage{datetime}
 \RequirePackage{nth}
-
+\RequirePackage{multirow}
+\RequirePackage{booktabs}
+% \RequirePackage{subfigure}
+% \RequirePackage{subfig}
 % 引入宏包
 % \usepackage{times}
 % \usepackage{caption} 

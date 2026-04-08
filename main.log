@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.9.5)  7 APR 2026 11:57
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.9.5)  7 APR 2026 17:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1065,27 +1065,34 @@ LaTeX Info: Redefining \today on input line 736.
 (C:\Program Files (x86)\MikTex\tex/generic/genmisc\nth.sty
 Package: nth 2002/02/27
 )
+(C:\Program Files (x86)\MikTex\tex/latex/multirow\multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip141
+\multirow@cntb=\count392
+\multirow@dima=\skip142
+\bigstrutjot=\dimen298
+)
 (C:\Program Files (x86)\MikTex\tex/latex/changepage\changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count392
-\cp@tempcnt=\count393
+\c@cp@cntr=\count393
+\cp@tempcnt=\count394
 )
 
 Package xeCJK Warning: Redefining CJKfamily `zhsong' (SimSun).
 
-\c@theorem=\count394
-\c@proposition=\count395
-\c@lemma=\count396
-\c@corollary=\count397
-\c@definition=\count398
-\c@remark=\count399
-\c@eg=\count400
+\c@theorem=\count395
+\c@proposition=\count396
+\c@lemma=\count397
+\c@corollary=\count398
+\c@definition=\count399
+\c@remark=\count400
+\c@eg=\count401
 (C:\Program Files (x86)\MikTex\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip141
-\bibsep=\skip142
+\bibhang=\skip143
+\bibsep=\skip144
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count401
+\c@NAT@ctr=\count402
 )
 (C:\Program Files (x86)\MikTex\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
@@ -1128,15 +1135,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (C:\Program Files (x86)\MikTex\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count402
+\c@section@level=\count403
 )
 (C:\Program Files (x86)\MikTex\tex/generic/stringenc\stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen298
-\Hy@linkcounter=\count403
-\Hy@pagecounter=\count404
+\@linkdim=\dimen299
+\Hy@linkcounter=\count404
+\Hy@pagecounter=\count405
 
 (C:\Program Files (x86)\MikTex\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
@@ -1144,7 +1151,7 @@ File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 (C:\Program Files (x86)\MikTex\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count405
+\Hy@SavedSpaceFactor=\count406
 
 (C:\Program Files (x86)\MikTex\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
@@ -1158,14 +1165,14 @@ Package hyperref Info: Plain pages OFF on input line 4210.
 Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count406
+\c@Hy@tempcnt=\count407
 
 (C:\Program Files (x86)\MikTex\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen299
+\XeTeXLinkMargin=\dimen300
 
 (C:\Program Files (x86)\MikTex\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -1174,9 +1181,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count407
-\Field@Width=\dimen300
-\Fld@charsize=\dimen301
+\Fld@menulength=\count408
+\Field@Width=\dimen301
+\Fld@charsize=\dimen302
 Package hyperref Info: Hyper figures OFF on input line 6078.
 Package hyperref Info: Link nesting OFF on input line 6083.
 Package hyperref Info: Hyper index ON on input line 6086.
@@ -1184,19 +1191,19 @@ Package hyperref Info: backreferencing OFF on input line 6093.
 Package hyperref Info: Link coloring OFF on input line 6098.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count408
-\c@Item=\count409
-\c@Hfootnote=\count410
+\Hy@abspage=\count409
+\c@Item=\count410
+\c@Hfootnote=\count411
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 
 (C:\Program Files (x86)\MikTex\tex/latex/hyperref\hxetex.def
 File: hxetex.def 2025-07-12 v7.01o Hyperref driver for XeTeX
 \pdfm@box=\box77
-\c@Hy@AnnotLevel=\count411
-\HyField@AnnotCount=\count412
-\Fld@listcount=\count413
-\c@bookmark@seq@number=\count414
+\c@Hy@AnnotLevel=\count412
+\HyField@AnnotCount=\count413
+\Fld@listcount=\count414
+\c@bookmark@seq@number=\count415
 
 (C:\Program Files (x86)\MikTex\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
@@ -1207,7 +1214,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
-\Hy@SectionHShift=\skip143
+\Hy@SectionHShift=\skip145
 )
 (C:\Program Files (x86)\MikTex\tex/latex/footnotebackref\footnotebackref.sty
 Package: footnotebackref 2012/07/01 v1.0 Backreferences for footnotes (Holger L
@@ -1216,7 +1223,7 @@ ange)
 (C:\Program Files (x86)\MikTex\tex/latex/letltxmacro\letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-\c@BackrefHyperFootnoteCounter=\count415
+\c@BackrefHyperFootnoteCounter=\count416
 ))
 (docs/Information.tex) (docs/Proposal.tex) (docs/Abstract.tex)
 (docs/Grading.tex) (docs/Progress.tex) (main.aux (docs/Chapter_01.aux)
@@ -1345,8 +1352,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen302
-\caption@adjustwidth@linewidth=\dimen303
+\caption@adjustwidth@hsize=\dimen303
+\caption@adjustwidth@linewidth=\dimen304
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
@@ -1355,7 +1362,7 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count416
+\c@lstlisting=\count417
 
 (C:\Program Files (x86)\MikTex\tex/latex/fmtcount\fc-english.def
 File: fc-english.def 2016/01/12
@@ -1896,6 +1903,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1905,6 +1915,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1962,9 +1975,6 @@ File: figure/Shadowhandvirtual.png Graphic file (type bmp)
 File: figure/Inspirehandvirtual.png Graphic file (type bmp)
 <figure/Inspirehandvirtual.png>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1983,9 +1993,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [28]
-Overfull \hbox (8.7849pt too wide) in paragraph at lines 82--93
+Overfull \hbox (8.7849pt too wide) in paragraph at lines 109--120
  [][] 
  []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
@@ -1997,10 +2010,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [29]
-File: figure/handscompare.jpg Graphic file (type bmp)
-<figure/handscompare.jpg>
+File: figure/Transformerspatialattentionl.png Graphic file (type bmp)
+<figure/Transformerspatialattentionl.png>
+File: figure/Transformerspatialattentionr.png Graphic file (type bmp)
+<figure/Transformerspatialattentionr.png>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1424) has occurred while \output is active []
 
 
 
@@ -2012,6 +2027,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [30]
+File: figure/Transformertemporalattentionl.png Graphic file (type bmp)
+<figure/Transformertemporalattentionl.png>
+File: figure/Transformertemporalattentionr.png Graphic file (type bmp)
+<figure/Transformertemporalattentionr.png>
+File: figure/handscompare.jpg Graphic file (type bmp)
+<figure/handscompare.jpg>
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2030,14 +2052,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [32]
-File: figure/grasping_performance.jpg Graphic file (type bmp)
-<figure/grasping_performance.jpg>
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -2057,7 +2073,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[34])
+[34]
+File: figure/grasping_performance.jpg Graphic file (type bmp)
+<figure/grasping_performance.jpg>
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2066,7 +2085,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[35]
+[35])
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.64723pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.64723pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
+
+[36]
 \openout2 = `docs/Chapter_05.aux'.
 
  (docs/Chapter_05.tex
@@ -2083,7 +2111,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[36
+[37
 
 
 
@@ -2101,9 +2129,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[37]
+[38]
 
-Package natbib Warning: Citation `RL28' on page 38 undefined on input line 62.
+Package natbib Warning: Citation `RL28' on page 39 undefined on input line 62.
 
 )
 
@@ -2114,7 +2142,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[38]
+[39]
 \openout2 = `docs/Chapter_06.aux'.
 
  (docs/Chapter_06.tex
@@ -2128,7 +2156,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[39
+[40
 
 
 
@@ -2143,7 +2171,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[40] (main.bbl
+[41] (main.bbl
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2152,7 +2180,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[41
+[42
 
 
 
@@ -2166,7 +2194,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[42])
+[43])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2175,7 +2203,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[43]
+[44]
 \openout2 = `docs/Acknowledgements.aux'.
 
  (docs/Acknowledgements.tex)
@@ -2187,7 +2215,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[44
+[45
 
 
 
@@ -2208,15 +2236,15 @@ L3 programming layer <2022/08/05>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 92F80E8416182592C320D4012563DF3B;4650.
+(rerunfilecheck)             Checksum: 02004560BA25415A88CB27A74E5315DA;4650.
  ) 
 Here is how much of TeX's memory you used:
- 25324 strings out of 403249
- 518310 string characters out of 5463966
- 973380 words of memory out of 5000000
- 53285 multiletter control sequences out of 15000+600000
+ 25397 strings out of 403249
+ 519102 string characters out of 5463966
+ 979467 words of memory out of 5000000
+ 53352 multiletter control sequences out of 15000+600000
  663975 words of font info for 242 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,12n,125p,1197b,796s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,13n,125p,1197b,794s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (54 pages).
+Output written on main.pdf (55 pages).

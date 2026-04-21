@@ -4,9 +4,15 @@
 % 对国内外研究现状和相关领域中已有的研究成果的简要评述；
 % 介绍本项研究工作研究设想、研究方法或实验设计、理论依据或实验基础；涉及范围和预期结果等。
 % 要求言简意赅，注意不要与摘要雷同或成为摘要的注解。
-\label{cha:introduction}
+% \label{cha:introduction}
 \section{选题背景与意义}
-\label{sec:background}
+% \label{sec:background}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.95\textwidth]{figure/abstractpic.jpg}
+    \caption{工作概要图。}
+    \label{fig:abstractpic}
+\end{figure}
 人机运动重定向是指将人类动作序列从人的关节运动空间映射到机器人运动空间的过程，
 旨在解决两者的物理结构、运动学约束以及自由度配置之间的差异。
 该技术可根据应用需求分为实时重定向与离线重定向：实时重定向是机器人遥操作技术的核心，
@@ -91,7 +97,13 @@ Transformer架构凭借其强大的自注意力机制和并行计算能力，
 此外，本文还开展了消融实验，验证了各项损失函数对系统最终性能的贡献。
 
 \section{本文的论文结构与章节安排}
-\label{sec:arrangement}
+% \label{sec:arrangement}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.95\textwidth]{figure/thesisstruc.jpg}
+    \caption{论文结构图。}
+    \label{fig:thesisstruc}
+\end{figure}
 本文共分为五章，各章节内容安排如下：
 
 第一章为绪论，介绍了研究背景、意义、国内外研究现状以及本文的主要工作和章节安排。
@@ -101,10 +113,12 @@ Transformer架构凭借其强大的自注意力机制和并行计算能力，
 
 第三章为方法设计，在本章我们系统阐述了TransRetarget这个方法，介绍了基于时空 Transformer 的重定向模型架构、损失函数设计。
 
-第四章为实验与结果，展示了在多个数据集上的实验设置、评估指标以及与基准方法的对比结果，并通过消融实验分析了各模块的贡献。
-
-第五章为重定向结果的交互强化，探讨了如何在得到重定向结果后，在实时交互的同时进行合理修正，
+第四章为重定向结果的交互强化，探讨了如何在得到重定向结果后，在实时交互的同时进行合理修正，
 以强化交互效果。
+
+第五章为实验与结果，展示了在多个数据集上的实验设置、评估指标以及与基准方法的对比结果，并通过消融实验分析了各模块的贡献。
+
+
 
 第六章为总结与展望，总结了本文的研究工作与主要贡献，并对未来的研究方向进行了展望。
 
